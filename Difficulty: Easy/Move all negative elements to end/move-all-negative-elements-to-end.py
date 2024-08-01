@@ -1,17 +1,16 @@
+#User function Template for python3
+
 class Solution:
     def segregateElements(self, arr):
-        positive = []
-        negative = []
+        pos=[]
+        neg = []
         
         for num in arr:
-            if num >= 0:
-                positive.append(num)
+            if num < 0:
+                neg.append(num)
             else:
-                negative.append(num)
-        
-        # Combine positive and negative lists
-        arr[:] = positive + negative
-
+                pos.append(num)
+        arr[:] = pos + neg
 
 
 #{ 
